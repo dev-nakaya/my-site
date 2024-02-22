@@ -7,7 +7,11 @@ export default defineNuxtConfig({
     '@nuxtjs/eslint-module',
     '@nuxtjs/tailwindcss'
   ],
-  srcDir: "src/",
+  runtimeConfig: {
+    microcmsUrl: '',
+    microcmsKey: ''
+  },
+  srcDir: 'src/',
   tailwindcss: {
     cssPath: '~/assets/css/tailwind.css',
     editorSupport: true
