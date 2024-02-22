@@ -8,6 +8,7 @@
     "generate": "nuxt generate",
     "preview": "nuxt preview",
     "postinstall": "nuxt prepare",
+    "lint:markup": "markuplint \"src/{components,layouts,pages}/**/*.vue\" \"src/app.vue\"",
     "lint:es": "eslint --ext \".js,.ts,.vue\" --ignore-path .gitignore ."
   },
   "dependencies": {
@@ -16,6 +17,8 @@
     "vue-router": "^4.2.5"
   },
   "devDependencies": {
+    "@markuplint/vue-parser": "^4.1.1",
+    "@markuplint/vue-spec": "^4.0.2",
     "@nuxtjs/eslint-module": "^4.1.0",
     "@nuxtjs/tailwindcss": "^6.11.4",
     "@typescript-eslint/eslint-plugin": "^7.0.2",
@@ -24,6 +27,7 @@
     "eslint-config-prettier": "^9.1.0",
     "eslint-plugin-tailwindcss": "^3.14.3",
     "eslint-plugin-vue": "^9.21.1",
+    "markuplint": "^4.1.1",
     "prettier": "^3.2.5"
   }
 }
