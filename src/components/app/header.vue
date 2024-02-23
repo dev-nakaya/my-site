@@ -1,11 +1,11 @@
 <template>
-  <header class="centering w-full h-16 border-b-2 border-slate-200">
-    <div class="app-container text-center px-12">
-      <NuxtLink to="/">
-        <h1 class="text-xl font-bold">
+  <header class="centering h-16 w-full border-b-2 border-slate-200">
+    <div class="app-container px-12 text-center">
+      <h1 class="text-2xl font-bold">
+        <NuxtLink to="/">
           dev.nakaya
-        </h1>
-      </NuxtLink>
+        </NuxtLink>
+      </h1>
     </div>
   </header>
 </template>

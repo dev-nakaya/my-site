@@ -3,7 +3,7 @@
 </script>
 
 <template>
-  <div class="centering flex-col h-screen">
+  <div class="centering h-screen flex-col">
     <AppHeader />
     <main class="app-container flex-1 p-12">
       <slot />

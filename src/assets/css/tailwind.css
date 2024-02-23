@@ -2,6 +2,12 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer base {
+  body {
+    color: '#0F172A'
+  }
+}
+
 @layer components {
   .app-container {
     @apply container;
@@ -11,4 +17,15 @@
     @apply flex items-center justify-center;
   }
 
+  .btn {
+    @apply w-fit px-4 py-2 rounded-md shadow-md;
+  }
+
+  .btn-gray {
+    @apply bg-slate-500 focus:bg-slate-700 hover:bg-slate-700;
+  }
+
+  .btn-primary {
+    @apply bg-primary-400 focus:bg-primary-500 hover:bg-primary-500;
+  }
 }

@@ -13,7 +13,6 @@ export default defineNuxtConfig({
   },
   srcDir: 'src/',
   tailwindcss: {
-    cssPath: '~/assets/css/tailwind.css',
     editorSupport: true
   },
   typescript: {

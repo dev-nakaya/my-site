@@ -1,11 +1,11 @@
 <script lang="ts" setup>
-const { data: articles } = await useFetch('/api/articles')
-// const { data: article } = await useFetch('/api/articles/sample-article')
+const { data: articles } = await useFetch('/api/articles', {
+  params: {
+    limit: 3
+  }
+})
 </script>
 
 <template>
-  <div>
-    <pre>{{ articles?.contents[0].id }}</pre>
-    <!-- <pre>{{ article }}</pre> -->
-  </div>
+  <Articles :articles="articles" />
 </template>
